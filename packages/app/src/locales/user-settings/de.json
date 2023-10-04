@@ -1,0 +1,12 @@
+{
+  "language": "Sprache",
+  "change_the_language": "Ändere die Sprache",
+  "theme": "Thema",
+  "theme_light": "Licht",
+  "theme_dark": "Dunkel",
+  "theme_auto": "Auto",
+  "change_the_theme_mode": "Ändern Sie den Themenmodus",
+  "select_theme": "Wählen {{theme}}",
+  "select_theme_auto": "Wählen Sie Auto-Design",
+  "select_lng": "Sprache auswählen {{language}}"
+}
