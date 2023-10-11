@@ -42,12 +42,13 @@ import { userSettingsTranslationRef } from '@backstage/plugin-user-settings/alph
 import { createTranslationResource } from '@backstage/core-plugin-api/alpha';
 const app = createApp({
   __experimentalTranslations: {
-    availableLanguages: ['en', 'de'],
+    availableLanguages: ['en', 'de', 'ja'],
     resources: [
       createTranslationResource({
         translations: {
           default: async () => await import('./locales/app/en.json'),
           de: async () => await import('./locales/app/de.json'),
+          ja: async () => await import('./locales/app/ja.json'),
         },
         ref: appTranslationRef,
       }),
@@ -57,6 +58,8 @@ const app = createApp({
             await import('./locales/i18n-example-frontend/en.json'),
           de: async () =>
             await import('./locales/i18n-example-frontend/de.json'),
+          ja: async () =>
+            await import('./locales/i18n-example-frontend/ja.json'),
         },
         ref: i18nExampleFrontendTranslationRef,
       }),
@@ -64,6 +67,7 @@ const app = createApp({
         translations: {
           default: async () => await import('./locales/user-settings/en.json'),
           de: async () => await import('./locales/user-settings/de.json'),
+          ja: async () => await import('./locales/user-settings/ja.json'),
         },
         ref: userSettingsTranslationRef,
       }),
